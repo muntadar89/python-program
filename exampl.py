@@ -1,3 +1,4 @@
+#Define a function called anti_vowel that takes one string, text, as input and returns the text with all of the vowels removed
 def anti_vowel(text):
     vowels = 'AaEeOoIiUu'
     s = ''
