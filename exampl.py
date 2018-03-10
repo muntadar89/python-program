@@ -43,3 +43,42 @@ def censor(text, word):
     return result
 
 print censor("this hack is wack hack", "hack")
+
+#Define a function called count that has two arguments called sequence and item.
+#Return the number of times the item occurs in the list.
+def count(sequence,item):
+  count = 0
+  for i in sequence :
+    if i == item :
+      count = count + 1 
+  return count
+print (count([1,2,3,1],1))
+
+#Define a function called purify that takes in a list of numbers, removes all odd numbers in the list, and returns the result
+def purify(list_num):
+  count = 0
+  s =[] 
+  for i in list_num :
+    if (i%2)==0 :
+      s.append(i)
+  return s   
+print (purify([1,2,3]))
+
+#Define a function called product that takes a list of integers as input and returns the product of all of the elements in the list.
+#or example: product([4, 5, 5]) should return 100 (because 4 * 5 * 5 is 100).
+def product(list_int):
+  product = 1
+  for i in list_int :
+    product = product * i 
+  return product
+print(product([4,5,5]))
+
+#Write a function remove_duplicates that takes in a list and removes elements of the list that are the same.
+#fr example: remove_duplicates([1, 1, 2, 2]) should return [1, 2]
+def remove_duplicates(l):
+  s=[]
+  for i in l :
+    if i not in s :
+      s.append(i)
+  return s
+print (remove_duplicates([4, 5, 5, 4]))
